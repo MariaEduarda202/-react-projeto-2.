@@ -1,0 +1,43 @@
+.slider{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagem{
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+ .seta-direita{
+   position: absolute;
+   top: 50%;
+   right: 32px;
+   font-size: 3rem;
+   color: #000;
+   z-index: 10;
+   cursor: grab;
+   user-select: none;
+ }
+ .seta-esquerda{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: grab;
+ user-select: none;
+}
+ .slider{
+   opacity: 0;
+   transition-duration: 1s ease;
+
+ }
+  .slider.active{
+
+    opacity: 1;
+    transition-duration:1s ;
+    transform: scale(1.08);
+  }
